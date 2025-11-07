@@ -139,3 +139,13 @@ results/02_salmon/*/logs/*
 # Dashboard files should be < 10MB total
 # CSV files are small and compressed well by git
 project_overview_approach.txt
+
+# Project notes with potential sensitive info
+project_overview_approach_backup.txt
+*_backup.txt
+*.token
+*.key
+
+# Personal notes
+notes/
+personal_notes.txt
