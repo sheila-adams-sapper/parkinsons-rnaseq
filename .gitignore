@@ -1,0 +1,140 @@
+# .gitignore for RNA-seq Dashboard Deployment
+# Optimized to keep dashboard files while excluding large analysis files
+
+# ===== LARGE DATA FILES (EXCLUDE) =====
+# Raw sequencing data
+results/00_raw_data/
+results/01_trimmed/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment files
+results/02_salmon/*/aux_info/
+results/02_salmon/*/libParams/
+results/02_salmon/*/logs/
+*.bam
+*.sam
+*.bai
+
+# ===== REFERENCE FILES (EXCLUDE) =====
+resources/genome/*.fa
+resources/genome/*.fa.gz
+resources/genome/*.gtf
+resources/genome/*.gtf.gz
+resources/STAR_index/
+resources/salmon_index/
+SRP229091_GSE140089_PRJNA588234/*
+SRP229091_GSE140089_PRJNA588234.zip
+
+# But keep tx2gene mapping if you have it
+!resources/tx2gene.tsv
+
+# ===== KEEP SMALL RESULT FILES (INCLUDE) =====
+# These are needed for the dashboard
+!results/04_differential_expression/**/*.csv
+!results/04_differential_expression/**/*.rds
+!results/05_pathway_analysis/**/*.csv
+!results/06_visualizations/**/*.png
+
+# ===== DASHBOARD FILES (INCLUDE) =====
+# Must be included for deployment
+!dashboard/
+!dashboard/data/
+!dashboard/data/*.rds
+!docs/
+!docs/index.html
+!docs/lib/
+!docs/**/*
+
+# ===== R/PYTHON TEMP FILES (EXCLUDE) =====
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+*.Rproj
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.python-version
+
+# ===== SNAKEMAKE (EXCLUDE) =====
+.snakemake/
+.snakemake_timestamp
+
+# ===== LOGS (EXCLUDE) =====
+logs/
+*.log
+slurm-*.out
+
+# ===== BENCHMARKS (EXCLUDE) =====
+benchmarks/
+
+# ===== TEMPORARY FILES (EXCLUDE) =====
+*.tmp
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===== CONDA ENVIRONMENTS (EXCLUDE) =====
+# Don't commit conda environments
+envs/
+!envs/*.yaml
+
+# ===== IDE FILES (EXCLUDE) =====
+.vscode/
+.idea/
+*.code-workspace
+
+# ===== OS FILES (EXCLUDE) =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===== PROJECT ORGANIZATION (EXCLUDE) =====
+config/*.txt
+workflow/end2end_workflow_dashboard.txt
+project_overview_approach.txt
+
+
+# ===== KEEP IMPORTANT CONFIG (INCLUDE) =====
+!config/
+!config/*.csv
+!config/*.yaml
+!config/*.json
+
+# ===== KEEP WORKFLOW (INCLUDE) =====
+!workflow/
+!workflow/**/*.smk
+!workflow/**/*.R
+!workflow/**/*.py
+
+# ===== KEEP SCRIPTS (INCLUDE) =====
+!create_static_dashboard.R
+!*.md
+!*.txt
+
+# ===== VERCEL (OPTIONAL) =====
+.vercel
+
+# ===== KEEP MINIMAL SALMON OUTPUT FOR DASHBOARD =====
+# If you need quant.sf files for regenerating dashboard
+!results/02_salmon/*/quant.sf
+!results/02_salmon/*/quant.genes.sf
+# But exclude the large auxiliary files
+results/02_salmon/*/aux_info/*
+results/02_salmon/*/libParams/*
+results/02_salmon/*/logs/*
+
+# ===== SIZE CHECK =====
+# Your repo should be under 100MB for GitHub
+# Dashboard files should be < 10MB total
+# CSV files are small and compressed well by git

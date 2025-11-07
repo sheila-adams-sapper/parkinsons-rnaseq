@@ -1,0 +1,8 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"Organismal Systems","Digestive system","hsa04977","Vitamin digestion and absorption","1/2","26/9497",0.00546820576248996,0.0249945688520089,NA,"338",1
+"Organismal Systems","Digestive system","hsa04975","Fat digestion and absorption","1/2","43/9497",0.00903546537420252,0.0249945688520089,NA,"338",1
+"Organismal Systems","Digestive system","hsa04979","Cholesterol metabolism","1/2","51/9497",0.0107119580794324,0.0249945688520089,NA,"338",1
+"Organismal Systems","Endocrine system","hsa04919","Thyroid hormone signaling pathway","1/2","122/9497",0.025528635433936,0.044675112009388,NA,"1827",1
+"Organismal Systems","Endocrine system","hsa04921","Oxytocin signaling pathway","1/2","155/9497",0.0323772043829919,0.0449730988520384,NA,"1827",1
+"Human Diseases","Infectious disease: viral","hsa05167","Kaposi sarcoma-associated herpesvirus infection","1/2","196/9497",0.0408523899579336,0.0449730988520384,NA,"1827",1
+"Human Diseases","Cardiovascular disease","hsa05417","Lipid and atherosclerosis","1/2","216/9497",0.0449730988520384,0.0449730988520384,NA,"338",1

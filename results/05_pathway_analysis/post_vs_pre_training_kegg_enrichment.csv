@@ -1,0 +1,9 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+NA,NA,"hsa04820","Cytoskeleton in muscle cells","7/25","233/9497",1.61231471555289e-06,0.000141883694968654,0.000115407790165891,"1277/4608/1284/25802/1281/1282/89",7
+"Human Diseases","Infectious disease: parasitic","hsa05146","Amoebiasis","5/25","103/9497",6.0858299772583e-06,0.000267776518999365,0.000217808651817665,"384/1277/1284/1281/1282",5
+"Human Diseases","Endocrine and metabolic disease","hsa04933","AGE-RAGE signaling pathway in diabetic complications","4/25","101/9497",0.000128392261817443,0.00328366127523737,0.0026709206544993,"1277/1284/1281/1282",4
+"Organismal Systems","Digestive system","hsa04974","Protein digestion and absorption","4/25","105/9497",0.000149257330692608,0.00328366127523737,0.0026709206544993,"1277/1284/1281/1282",4
+"Organismal Systems","Endocrine system","hsa04926","Relaxin signaling pathway","4/25","130/9497",0.000339286340590899,0.00597143959439983,0.00485715182319603,"1277/1284/1281/1282",4
+"Environmental Information Processing","Signaling molecules and interaction","hsa04512","ECM-receptor interaction","3/25","89/9497",0.00157624779409974,0.0226584775385286,0.0184303405815783,"1277/1284/1282",3
+"Cellular Processes","Cellular community - eukaryotes","hsa04510","Focal adhesion","4/25","203/9497",0.00180237889511023,0.0226584775385286,0.0184303405815783,"85366/1277/1284/1282",4
+"Organismal Systems","Immune system","hsa04611","Platelet activation","3/25","126/9497",0.00423729399640972,0.0466102339605069,0.0379126304941922,"85366/1277/1281",3
