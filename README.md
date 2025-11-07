@@ -2,9 +2,15 @@
 
 Interactive dashboard for exploring RNA-seq results from Parkinson's disease research.
 
-## 🔗 Live Dashboard
-- **Static Dashboard**: https://sheila-adams-sapper.github.io/parkinsons-rnaseq/
-- **Interactive Features**: Volcano plots, pathway analysis, gene expression tables
+## 🚀 Live Dashboard
+- **Production**: https://parkinsons-rnaseq.vercel.app
+- **Repository**: https://github.com/sheila-adams-sapper/parkinsons-rnaseq
+- **Deployment**: Vercel (auto-deploy from main branch)
+- **Interactive Features**: Volcano plots, PCA plots, pathway analysis, gene expression tables
+
+## 🛠️ Deployment
+This dashboard is automatically deployed to Vercel from the `docs/` directory. 
+Any push to the main branch triggers a new deployment.
 
 ## 📊 Key Results
 - Directional pathway analysis showing up/down-regulated pathways
